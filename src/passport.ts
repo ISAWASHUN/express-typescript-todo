@@ -1,8 +1,6 @@
-// src/passport.ts
-
 import passport from 'passport';
 import { Strategy as LineStrategy, Profile } from 'passport-line-auth';
-import { prisma } from './prismaClient';
+import { prisma } from './config/prisma';
 
 passport.use(
   new LineStrategy(
